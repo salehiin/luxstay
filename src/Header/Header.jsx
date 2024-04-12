@@ -1,7 +1,17 @@
 import { Link, NavLink } from "react-router-dom";
 import userDefaultPic from '../assets/user.png';
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Header = () => {
+
+  const {user, logOut} = useContext(AuthContext);
+
+  const handleSignOut = () =>{
+      logOut()
+      .then()
+      .catch()
+  }
 
   const navLinks = <>
 
@@ -51,9 +61,17 @@ const Header = () => {
               <img alt="Tailwind CSS Navbar component" src={userDefaultPic} />
             </div>
           </div>
-          <Link to="/login">
-            <button className="btn btn-accent">Login</button>
-          </Link>
+          {
+
+            user ?
+            <button onClick={handleSignOut} className="btn btn-accent">Sign Out</button>
+            :
+            <Link to="/login">
+              <button className="btn btn-accent">Login</button>
+            </Link>
+
+          }
+          
         </div>
       </div>
     </div>

@@ -1,0 +1,114 @@
+[
+  {
+    "estate_title": "Luxurious Penthouse with Ocean View",
+    "id": "001",
+    "segment_name": "Penthouse",
+    "description": "Stunning penthouse offering panoramic views of the ocean. Features spacious living areas, modern amenities, and private elevator access.",
+    "price": "$5,000,000",
+    "status": "sale",
+    "area": "3000 sq ft",
+    "location": "Miami Beach, Florida",
+    "facilities": ["Infinity pool", "Gym", "Spa", "Concierge service"],
+    "image_url": "https://example.com/private_island_caribbean.jpg"
+  },
+  {
+    "estate_title": "Exquisite Beachfront Villa",
+    "id": "002",
+    "segment_name": "Villa",
+    "description": "Elegant villa located on a pristine beach. Boasts luxurious interiors, lush gardens, and direct beach access.",
+    "price": "$8,500,000",
+    "status": "sale",
+    "area": "5000 sq ft",
+    "location": "Maui, Hawaii",
+    "facilities": ["Private beach access", "Outdoor kitchen", "Home theater"],
+    "image_url": "https://example.com/private_island_caribbean.jpg"
+  },
+  {
+    "estate_title": "Exclusive Island Resort",
+    "id": "003",
+    "segment_name": "Resort",
+    "description": "A private island resort offering unparalleled luxury and seclusion. Features lavish accommodations, gourmet dining, and a range of recreational activities.",
+    "price": "$20,000,000",
+    "status": "sale",
+    "area": "Private Island",
+    "location": "Maldives",
+    "facilities": ["Overwater bungalows", "Private yacht charter", "Diving center"],
+    "image_url": "https://example.com/private_island_caribbean.jpg"
+  },
+  {
+    "estate_title": "Majestic Mansion on the French Riviera",
+    "id": "004",
+    "segment_name": "Mansion",
+    "description": "Magnificent mansion overlooking the Mediterranean Sea. Impeccably designed interiors, sprawling grounds, and luxurious amenities.",
+    "price": "$15,000,000",
+    "status": "sale",
+    "area": "10000 sq ft",
+    "location": "Cannes, France",
+    "facilities": ["Tennis court", "Wine cellar", "Helipad"],
+    "image_url": "https://example.com/private_island_caribbean.jpg"
+  },
+  {
+    "estate_title": "Private Island Paradise in the Caribbean",
+    "id": "005",
+    "segment_name": "Private Island",
+    "description": "A secluded paradise nestled in the turquoise waters of the Caribbean. This private island boasts pristine beaches, lush tropical foliage, and luxurious accommodations.",
+    "price": "$25,000,000",
+    "status": "sale",
+    "area": "Private Island",
+    "location": "St. Lucia",
+    "facilities": ["Beachfront villas", "Helipad", "Infinity pool"],
+    "image_url": "https://example.com/private_island_caribbean.jpg"
+  },
+  {
+    "estate_title": "Modern Luxury Villa in Beverly Hills",
+    "id": "006",
+    "segment_name": "Villa",
+    "description": "Sleek and sophisticated villa located in the prestigious neighborhood of Beverly Hills. Features contemporary design, expansive outdoor entertaining areas, and stunning city views.",
+    "price": "$12,000,000",
+    "status": "sale",
+    "area": "8000 sq ft",
+    "location": "Beverly Hills, California",
+    "facilities": [
+      "Infinity pool",
+      "Home automation system",
+      "Outdoor kitchen"
+    ],
+    "image_url": "https://example.com/luxury_villa_beverly_hills.jpg"
+  },
+  {
+    "estate_title": "Historic Mansion in Tuscany",
+    "id": "007",
+    "segment_name": "Mansion",
+    "description": "An exquisite mansion steeped in history and surrounded by vineyards in the heart of Tuscany. Elegant interiors, sprawling gardens, and breathtaking views of the countryside.",
+    "price": "$18,000,000",
+    "status": "sale",
+    "area": "12000 sq ft",
+    "location": "Tuscany, Italy",
+    "facilities": ["Wine cellar", "Tennis court", "Guest house"],
+    "image_url": "https://example.com/historic_mansion_tuscany.jpg"
+  },
+  {
+    "estate_title": "Luxurious Beachfront Retreat in the Bahamas",
+    "id": "008",
+    "segment_name": "Beachfront Property",
+    "description": "A stunning beachfront property nestled on the shores of the Bahamas. Offers unparalleled privacy, white sandy beaches, and turquoise waters.",
+    "price": "$6,500,000",
+    "status": "sale",
+    "area": "4000 sq ft",
+    "location": "Nassau, Bahamas",
+    "facilities": ["Private beach access", "Infinity pool", "Outdoor cabana"],
+    "image_url": "https://example.com/beachfront_retreat_bahamas.jpg"
+  },
+  {
+    "estate_title": "Exclusive Resort Villa in Phuket",
+    "id": "009",
+    "segment_name": "Resort",
+    "description": "A luxurious villa within a prestigious resort community in Phuket, Thailand. Offers world-class amenities, stunning ocean views, and unparalleled service.",
+    "price": "$9,000,000",
+    "status": "sale",
+    "area": "6000 sq ft",
+    "location": "Phuket, Thailand",
+    "facilities": ["Private beach club", "Spa", "Gourmet dining"],
+    "image_url": "https://example.com/resort_villa_phuket.jpg"
+  }
+]
