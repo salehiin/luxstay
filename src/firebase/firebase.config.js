@@ -3,14 +3,16 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+// console.log('inside firebase config', import.meta.env.VITE_PASS)
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDjy2X9wr7ArSKIXjXIogEbK9mT-K2GQGc",
-  authDomain: "anine-luxstay.firebaseapp.com",
-  projectId: "anine-luxstay",
-  storageBucket: "anine-luxstay.appspot.com",
-  messagingSenderId: "365878987315",
-  appId: "1:365878987315:web:4cf1d048355e9887b87146"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
