@@ -10,7 +10,7 @@ const Estate = ({estates}) => {
         
         <div className="card max-w-[372px] bg-base-100 shadow-xl">
           <figure>
-            <img
+            <img className="h-[252px] w-full"
               src={image_url}
               alt="Estates"
             />
@@ -50,4 +50,4 @@ const Estate = ({estates}) => {
 
 export default Estate;
 
-"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+// "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"

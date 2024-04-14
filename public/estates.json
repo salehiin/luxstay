@@ -1,6 +1,6 @@
 [
   {
-    "estate_title": "Luxurious Penthouse with Ocean View",
+    "estate_title": "Luxurious Penthouse",
     "id": "001",
     "segment_name": "Penthouse",
     "description": "Stunning penthouse offering panoramic views of the ocean. Features spacious living areas, modern amenities, and private elevator access.",
@@ -9,7 +9,7 @@
     "area": "3000 sq ft",
     "location": "Miami Beach, Florida",
     "facilities": ["Infinity pool", "Gym", "Spa", "Concierge service"],
-    "image_url": "https://example.com/private_island_caribbean.jpg"
+    "image_url": "https://i.postimg.cc/8czCbD3Z/penthouse.jpg"
   },
   {
     "estate_title": "Exquisite Beachfront Villa",
@@ -21,7 +21,7 @@
     "area": "5000 sq ft",
     "location": "Maui, Hawaii",
     "facilities": ["Private beach access", "Outdoor kitchen", "Home theater"],
-    "image_url": "https://example.com/private_island_caribbean.jpg"
+    "image_url": "https://i.postimg.cc/nzyJXxxs/beachfront.jpg"
   },
   {
     "estate_title": "Exclusive Island Resort",
@@ -33,7 +33,7 @@
     "area": "Private Island",
     "location": "Maldives",
     "facilities": ["Overwater bungalows", "Private yacht charter", "Diving center"],
-    "image_url": "https://example.com/private_island_caribbean.jpg"
+    "image_url": "https://i.postimg.cc/MKtF4wLy/islandresort.jpg"
   },
   {
     "estate_title": "Majestic Mansion on the French Riviera",
@@ -45,7 +45,7 @@
     "area": "10000 sq ft",
     "location": "Cannes, France",
     "facilities": ["Tennis court", "Wine cellar", "Helipad"],
-    "image_url": "https://example.com/private_island_caribbean.jpg"
+    "image_url": "https://i.postimg.cc/nhBQrVtm/mansion.jpg"
   },
   {
     "estate_title": "Private Island Paradise in the Caribbean",
@@ -57,7 +57,7 @@
     "area": "Private Island",
     "location": "St. Lucia",
     "facilities": ["Beachfront villas", "Helipad", "Infinity pool"],
-    "image_url": "https://example.com/private_island_caribbean.jpg"
+    "image_url": "https://i.postimg.cc/zBmtWGL1/privateisland.jpg"
   },
   {
     "estate_title": "Modern Luxury Villa in Beverly Hills",
@@ -73,7 +73,7 @@
       "Home automation system",
       "Outdoor kitchen"
     ],
-    "image_url": "https://example.com/luxury_villa_beverly_hills.jpg"
+    "image_url": "https://i.postimg.cc/0QBNZhsx/modernvilla.jpg"
   },
   {
     "estate_title": "Historic Mansion in Tuscany",
@@ -85,7 +85,7 @@
     "area": "12000 sq ft",
     "location": "Tuscany, Italy",
     "facilities": ["Wine cellar", "Tennis court", "Guest house"],
-    "image_url": "https://example.com/historic_mansion_tuscany.jpg"
+    "image_url": "https://i.postimg.cc/m2MQzyYh/historicmansion.jpg"
   },
   {
     "estate_title": "Luxurious Beachfront Retreat in the Bahamas",
@@ -97,7 +97,7 @@
     "area": "4000 sq ft",
     "location": "Nassau, Bahamas",
     "facilities": ["Private beach access", "Infinity pool", "Outdoor cabana"],
-    "image_url": "https://example.com/beachfront_retreat_bahamas.jpg"
+    "image_url": "https://i.postimg.cc/nzyJXxxs/beachfront.jpg"
   },
   {
     "estate_title": "Exclusive Resort Villa in Phuket",
@@ -109,6 +109,6 @@
     "area": "6000 sq ft",
     "location": "Phuket, Thailand",
     "facilities": ["Private beach club", "Spa", "Gourmet dining"],
-    "image_url": "https://example.com/resort_villa_phuket.jpg"
+    "image_url": "https://i.postimg.cc/RZ5LXDSc/resortvilla.jpg"
   }
 ]

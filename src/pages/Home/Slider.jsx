@@ -3,24 +3,24 @@
 const Slider = () => {
   return (
     <div>
-      <div className="lg:w-[1152px] mx-auto carousel rounded-box">
+      <div className="lg:w-[1152px] h-[520px] mx-auto carousel rounded-box">
+        <div className="carousel-item w-full ">
+          <img className="rounded-2xl "
+            src="https://i.postimg.cc/mDXzc82z/slider.jpg"
+            className="w-full"
+            alt="Tailwind CSS Carousel component"
+          />
+        </div>
         <div className="carousel-item w-full">
-          <img
-            src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+          <img className=""
+            src="https://i.postimg.cc/0j8WNX3g/slidertwo.jpg"
             className="w-full"
             alt="Tailwind CSS Carousel component"
           />
         </div>
         <div className="carousel-item w-full">
           <img
-            src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-            className="w-full"
-            alt="Tailwind CSS Carousel component"
-          />
-        </div>
-        <div className="carousel-item w-full">
-          <img
-            src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            src="https://i.postimg.cc/MTwtsrzc/sliderthree.jpg"
             className="w-full"
             alt="Tailwind CSS Carousel component"
           />
@@ -32,5 +32,6 @@ const Slider = () => {
 
 export default Slider;
 
+// https://i.postimg.cc/2ymJZS1K/sliderone.jpg
 
 // v- 52-7
