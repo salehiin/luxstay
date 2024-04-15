@@ -36,7 +36,7 @@
     "image_url": "https://i.postimg.cc/MKtF4wLy/islandresort.jpg"
   },
   {
-    "estate_title": "Majestic Mansion on the French Riviera",
+    "estate_title": "Majestic Mansion",
     "id": "004",
     "segment_name": "Mansion",
     "description": "Magnificent mansion overlooking the Mediterranean Sea. Impeccably designed interiors, sprawling grounds, and luxurious amenities.",
@@ -48,7 +48,7 @@
     "image_url": "https://i.postimg.cc/nhBQrVtm/mansion.jpg"
   },
   {
-    "estate_title": "Private Island Paradise in the Caribbean",
+    "estate_title": "Private Island",
     "id": "005",
     "segment_name": "Private Island",
     "description": "A secluded paradise nestled in the turquoise waters of the Caribbean. This private island boasts pristine beaches, lush tropical foliage, and luxurious accommodations.",
@@ -60,7 +60,7 @@
     "image_url": "https://i.postimg.cc/zBmtWGL1/privateisland.jpg"
   },
   {
-    "estate_title": "Modern Luxury Villa in Beverly Hills",
+    "estate_title": "Modern Luxury Villa",
     "id": "006",
     "segment_name": "Villa",
     "description": "Sleek and sophisticated villa located in the prestigious neighborhood of Beverly Hills. Features contemporary design, expansive outdoor entertaining areas, and stunning city views.",
@@ -76,7 +76,7 @@
     "image_url": "https://i.postimg.cc/0QBNZhsx/modernvilla.jpg"
   },
   {
-    "estate_title": "Historic Mansion in Tuscany",
+    "estate_title": "Historic Mansion",
     "id": "007",
     "segment_name": "Mansion",
     "description": "An exquisite mansion steeped in history and surrounded by vineyards in the heart of Tuscany. Elegant interiors, sprawling gardens, and breathtaking views of the countryside.",
@@ -88,9 +88,9 @@
     "image_url": "https://i.postimg.cc/m2MQzyYh/historicmansion.jpg"
   },
   {
-    "estate_title": "Luxurious Beachfront Retreat in the Bahamas",
+    "estate_title": "Beachfront Retreat",
     "id": "008",
-    "segment_name": "Beachfront Property",
+    "segment_name": "Beach Bliss",
     "description": "A stunning beachfront property nestled on the shores of the Bahamas. Offers unparalleled privacy, white sandy beaches, and turquoise waters.",
     "price": "$6,500,000",
     "status": "sale",
@@ -100,7 +100,7 @@
     "image_url": "https://i.postimg.cc/nzyJXxxs/beachfront.jpg"
   },
   {
-    "estate_title": "Exclusive Resort Villa in Phuket",
+    "estate_title": "Exclusive Resort",
     "id": "009",
     "segment_name": "Resort",
     "description": "A luxurious villa within a prestigious resort community in Phuket, Thailand. Offers world-class amenities, stunning ocean views, and unparalleled service.",
