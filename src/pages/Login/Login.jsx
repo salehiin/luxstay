@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 const Login = () => {
 
-  const{signIn} = useContext(AuthContext);
+  const{signIn, signInWithGoogle} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   console.log('location in the login page', location);
@@ -20,7 +20,22 @@ const Login = () => {
     signIn(email, password)
     .then(result =>{
       console.log(result.user);
+      alert('User Logged in successfully')
 
+      navigate( location?.state ? location.state : '/' );
+    })
+    .catch(error =>{
+      console.error(error);
+      alert('Wrong email or password')
+    })
+  }
+
+  const handleGoogleSignIn = () =>{
+    signInWithGoogle()
+    .then(result =>{
+      console.log(result.user);
+      alert('User Logged in successfully')
+      
       navigate( location?.state ? location.state : '/' );
     })
     .catch(error =>{
@@ -79,7 +94,18 @@ const Login = () => {
               </div>
             </form>
             <p className="text-center">Don't have an account?<Link to="/register" className="text-primary font-bold"> Register</Link></p>
+            {/* socilal login */}
+            <div className="text-center">
+              <h3 className="font-bold mt-4">Sign in with</h3>
+              <p className="text-center font-bold">
+                <button onClick={handleGoogleSignIn} className=" btn-link mx-2">Google</button>
+                <button className=" btn-link mx-2">Github</button>
+              </p>
+            </div>
+            
+            {/* socilal login */}
           </div>
+          
         </div>
       </div>
     </div>
@@ -88,6 +114,7 @@ const Login = () => {
 
 export default Login;
 
+// v-51.8
 
 
 // https://anine-luxstay.web.app/

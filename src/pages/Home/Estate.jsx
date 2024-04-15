@@ -37,7 +37,7 @@ const Estate = ({estates}) => {
                     
                       {
                       
-                      <Link to={`/estates/${id}`}><div className=" font-bold text-primary border-none">Details...</div></Link>
+                      <Link to={`/estates/${id}`}><div className="badge badge-outline font-bold text-primary border-none">View Property...</div></Link>
                       }
                     
                 

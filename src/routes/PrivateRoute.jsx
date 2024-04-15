@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
+import PropTypes from 'prop-types';
+
 
 
 const PrivateRoute = ({children}) => {
@@ -10,7 +12,7 @@ const PrivateRoute = ({children}) => {
     console.log(location.pathname);
 
     if(loading){
-        return <span className="text-center loading loading-ring loading-lg"></span>
+        return <span className="mx-auto loading loading-ring loading-lg"></span>
     }
 
     if (user) {
@@ -24,5 +26,9 @@ const PrivateRoute = ({children}) => {
 };
 
 export default PrivateRoute;
+
+PrivateRoute.propTypes = {
+    children: PropTypes.node
+}
 
 // v- 52.5-7

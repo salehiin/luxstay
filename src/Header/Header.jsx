@@ -17,6 +17,10 @@ const Header = () => {
 
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
+            {user && <>
+               <li><NavLink to="/profile">Profile</NavLink></li>
+               <li><NavLink to="/agents">Our Agents</NavLink></li>
+            </>}
 
   </>
 
@@ -56,15 +60,18 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img alt="Tailwind CSS Navbar component" src={userDefaultPic} />
-            </div>
-          </div>
+          
           {
 
             user ?
-            <button onClick={handleSignOut} className="btn btn-accent">Sign Out</button>
+            <div className="flex">
+              <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img alt="Tailwind CSS Navbar component" src={userDefaultPic} />
+                </div>
+              </div>
+              <button onClick={handleSignOut} className="btn btn-accent">Sign Out</button>
+            </div>
             :
             <Link to="/login">
               <button className="btn btn-accent">Login</button>

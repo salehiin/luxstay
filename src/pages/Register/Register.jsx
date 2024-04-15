@@ -1,6 +1,7 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 
 
@@ -9,6 +10,8 @@ import { AuthContext } from "../../providers/AuthProvider";
 const Register = () => {
 
     const {createUser} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleRegister = e => {
         e.preventDefault();
@@ -22,12 +25,28 @@ const Register = () => {
         const photo = form.get('photo');
         console.log(name, photo, email, password);
 
+        if ( password.length < 6 ){
+          alert('Password must be at least 6 characters.');
+          return;
+        }
+        else if (!/[A-Z]/.test(password)){
+          alert('Password must have 1 uppercase character.')
+          return;
+        }
+        else if (!/[a-z]/.test(password)){
+          alert('Password must have 1 lower character.')
+          return;
+        }
+
         createUser(email, password)
         .then(result => {
             console.log(result.user)
+            alert('User created successfully.')
+            navigate( location?.state ? location.state : '/' );
         })
         .catch(error =>{
             console.error(error)
+            alert('Email already in use.')
         })
 
       }
@@ -91,13 +110,24 @@ const Register = () => {
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="password"
-                  className="input input-bordered"
-                  required
-                />
+                <div className="relative">
+
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    name="password"
+                    placeholder="password"
+                    className="input input-bordered"
+                    required
+                  />
+                  <span className="absolute top-4 right-14" onClick={() => setShowPassword(!showPassword)}>
+
+                    {
+                      showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
+                    }
+
+                  </span>
+
+                </div>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
@@ -125,4 +155,4 @@ const Register = () => {
 export default Register;
 
 
-// v- 52_5-4
+// v- 50-6
