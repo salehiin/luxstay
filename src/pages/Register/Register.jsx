@@ -9,7 +9,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
 
-    const {createUser} = useContext(AuthContext);
+    const {createUser, updateUserProfile} = useContext(AuthContext);
     const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
 
@@ -17,6 +17,7 @@ const Register = () => {
         e.preventDefault();
         console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
+        const accepted = e.target.terms.checked;
 
 
         const email = form.get('email');
@@ -37,12 +38,22 @@ const Register = () => {
           alert('Password must have 1 lower character.')
           return;
         }
+        else if (!accepted){
+          alert('Please accept our terms and conditions!')
+          return;
+        }
 
-        createUser(email, password)
+        createUser(email, password, name, photo)
         .then(result => {
+          updateUserProfile(name, photo)
+          .then(() =>{
+
+            navigate( location?.state ? location.state : '/' );
+
+          })
             console.log(result.user)
             alert('User created successfully.')
-            navigate( location?.state ? location.state : '/' );
+            
         })
         .catch(error =>{
             console.error(error)
@@ -134,7 +145,11 @@ const Register = () => {
                   </a>
                 </label>
               </div>
-              <div className="form-control mt-6">
+              <div className="">
+                <input type="checkbox" name="terms" id="terms" />
+                <label htmlFor="terms"> Accept our <a href="" className="text-primary">Terms and Conditions</a>.</label>
+              </div>
+              <div className="form-control ">
                 <button className="btn btn-primary">Register</button>
               </div>
             </form>

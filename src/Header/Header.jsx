@@ -67,7 +67,7 @@ const Header = () => {
             <div className="flex">
               <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
-                  <img alt="Tailwind CSS Navbar component" src={userDefaultPic} />
+                  <img alt="Tailwind CSS Navbar component" src={user?.photoURL || 'userDefaultPic'} />
                 </div>
               </div>
               <button onClick={handleSignOut} className="btn btn-accent">Sign Out</button>
