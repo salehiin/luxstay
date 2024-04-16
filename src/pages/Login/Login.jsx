@@ -2,6 +2,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import swal from 'sweetalert';
 
 const Login = () => {
 
@@ -22,13 +24,21 @@ const Login = () => {
     signIn(email, password)
     .then(result =>{
       console.log(result.user);
-      alert('User Logged in successfully')
+      // alert('User Logged in successfully')
+      // toast("Login successful !");
+      swal("Login successful!");
+
+      // setTmeOut(()=> {
+      //   displayCards(data)
+      //   } , 2000) 
 
       navigate( location?.state ? location.state : '/' );
     })
     .catch(error =>{
       console.error(error);
-      alert('Wrong email or password')
+      // alert('Wrong email or password')
+      // toast("Wrong email or password !");
+      swal("Wrong email or password!");
     })
   }
 
@@ -36,7 +46,8 @@ const Login = () => {
     signInWithGoogle()
     .then(result =>{
       console.log(result.user);
-      alert('User Logged in successfully')
+      // alert('User Logged in successfully')
+      swal("Login successful!");
       
       navigate( location?.state ? location.state : '/' );
     })
@@ -130,6 +141,7 @@ const Login = () => {
           
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

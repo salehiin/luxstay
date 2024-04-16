@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import swal from 'sweetalert';
 
 
 
@@ -27,19 +28,23 @@ const Register = () => {
         console.log(name, photo, email, password);
 
         if ( password.length < 6 ){
-          alert('Password must be at least 6 characters.');
+          // alert('Password must be at least 6 characters.');
+          swal("Password must be at least 6 characters!");
           return;
         }
         else if (!/[A-Z]/.test(password)){
-          alert('Password must have 1 uppercase character.')
+          // alert('Password must have 1 uppercase character.')
+          swal("Password must have 1 uppercase character!");
           return;
         }
         else if (!/[a-z]/.test(password)){
-          alert('Password must have 1 lower character.')
+          // alert('Password must have 1 lower character.')
+          swal("Password must have 1 lower character!");
           return;
         }
         else if (!accepted){
-          alert('Please accept our terms and conditions!')
+          // alert('Please accept our terms and conditions!')
+          swal("Please accept our terms and conditions!");
           return;
         }
 
@@ -52,12 +57,15 @@ const Register = () => {
 
           })
             console.log(result.user)
-            alert('User created successfully.')
+            // alert('User created successfully.')
+            swal("User created successfully!");
+            
             
         })
         .catch(error =>{
             console.error(error)
-            alert('Email already in use.')
+            // alert('Email already in use.')
+            swal("Email already in use!");
         })
 
       }
