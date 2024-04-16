@@ -8,6 +8,7 @@ const Root = () => {
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
+            <ToastContainer />
         </div>
     );
 };
