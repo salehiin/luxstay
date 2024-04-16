@@ -7,7 +7,7 @@ import swal from 'sweetalert';
 
 const Login = () => {
 
-  const{signIn, signInWithGoogle} = useContext(AuthContext);
+  const{signIn, signInWithGoogle, signInWithGithub} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   console.log('location in the login page', location);
@@ -44,6 +44,20 @@ const Login = () => {
 
   const handleGoogleSignIn = () =>{
     signInWithGoogle()
+    .then(result =>{
+      console.log(result.user);
+      // alert('User Logged in successfully')
+      swal("Login successful!");
+      
+      navigate( location?.state ? location.state : '/' );
+    })
+    .catch(error =>{
+      console.error(error);
+    })
+  }
+
+  const handleGithubSignIn = () =>{
+    signInWithGithub()
     .then(result =>{
       console.log(result.user);
       // alert('User Logged in successfully')
@@ -132,7 +146,7 @@ const Login = () => {
               <h3 className="font-bold mt-4">Sign in with</h3>
               <p className="text-center font-bold">
                 <button onClick={handleGoogleSignIn} className=" btn-link mx-2">Google</button>
-                <button className=" btn-link mx-2">Github</button>
+                <button onClick={handleGithubSignIn} className=" btn-link mx-2">Github</button>
               </p>
             </div>
             
