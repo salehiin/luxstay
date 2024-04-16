@@ -1,17 +1,24 @@
-import { useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const Estates = () => {
 
-    const {id, description, area, estate_title} = useParams();
+    const estates = useLoaderData();
+
+    const {id} = useParams();
+
+    const estate = estates.find(estate => estate.id === id)
+    console.log(estates, id)
 
     return (
         <div>
             <div className="">
+                <img src={estate.image_url} alt="" />
                 <h2 className="text-5xl">Estate Details</h2>
                 <p>{id}</p>
                 <div>
-                    ${id.area}
+                    {estate.area}
                 </div>
+                <p>{estate.description}</p>
                 
             </div>
         </div>

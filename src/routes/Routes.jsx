@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Root from "../layouts/Root";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
@@ -7,6 +7,7 @@ import Estates from "../pages/Estates/Estates";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../pages/Profile/Profile";
 import Agents from "../pages/Agents/Agents";
+import AuthProvider from "../providers/AuthProvider";
 
 
 
@@ -23,7 +24,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/estates/:id/',
-                element: <PrivateRoute><Estates></Estates></PrivateRoute>
+                element: <PrivateRoute><Estates></Estates></PrivateRoute>,
+                loader: () => fetch('/estates.json')
             },
             {
                 path: '/profile',
@@ -44,6 +46,8 @@ const router = createBrowserRouter([
         ]
     }
 ])
+
+
 
 export default router;
 

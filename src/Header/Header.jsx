@@ -64,13 +64,15 @@ const Header = () => {
           {
 
             user ?
-            <div className="flex">
-              <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+            <div className="flex items-center">
+              <button className="btn btn-sm btn-ghost">{user?.displayName || 'User Unknown'}</button>
+              <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar flex">
                 <div className="w-10 rounded-full">
-                  <img alt="Tailwind CSS Navbar component" src={user?.photoURL || 'userDefaultPic'} />
+                  <img alt="Tailwind CSS Navbar component" src={user?.photoURL || userDefaultPic} />
                 </div>
               </div>
-              <button onClick={handleSignOut} className="btn btn-accent">Sign Out</button>
+              
+              <button onClick={handleSignOut} className="btn btn-sm btn-accent">Log Out</button>
             </div>
             :
             <Link to="/login">
