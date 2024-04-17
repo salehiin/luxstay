@@ -4,7 +4,7 @@ import { FaRegEnvelope } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer bg-[#02c39a] text-[#f0f3bd] grid md:grid-cols-3 lg:grid-cols-7 gap-x-12 p-8 mt-10">
+      <footer className="footer bg-[#02c39a] text-[#f0f3bd] grid md:grid-cols-3 lg:grid-cols-7 md:gap-x-10 lg:gap-x-12 p-8 mt-10">
         <nav className=" md:col-span-1 lg:col-span-2">
           <h6 className="footer-title text-[#2B3440]">Our Services</h6>
           <p>
