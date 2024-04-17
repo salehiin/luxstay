@@ -64,7 +64,7 @@ const Header = () => {
           {
 
             user ?
-            <div className="flex items-center">
+            <div className="flex flex-col md:flex-row items-center">
               <button className="btn btn-sm btn-ghost">{user?.displayName || 'User Unknown'}</button>
               <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar flex">
                 <div className="w-10 rounded-full">

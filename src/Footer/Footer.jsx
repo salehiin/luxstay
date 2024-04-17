@@ -1,9 +1,6 @@
 import { LuMapPin } from "react-icons/lu";
 import { FaRegEnvelope } from "react-icons/fa";
 
-
-
-
 const Footer = () => {
   return (
     <div>
@@ -11,7 +8,9 @@ const Footer = () => {
         <nav className=" md:col-span-1 lg:col-span-2">
           <h6 className="footer-title text-[#2B3440]">Our Services</h6>
           <p>
-          Premier estate brokerage offering bespoke property solutions, personalized client care, and unparalleled expertise in luxury real estate.
+            Premier estate brokerage offering bespoke property solutions,
+            personalized client care, and unparalleled expertise in luxury real
+            estate.
           </p>
           {/* <a className="link link-hover">Branding</a>
           <a className="link link-hover">Design</a>
@@ -20,8 +19,14 @@ const Footer = () => {
         </nav>
         <nav className=" md:col-span-1 lg:col-span-2">
           <h6 className="footer-title text-[#2B3440]">Contact Us</h6>
-          <p className="flex items-center"><LuMapPin />&nbsp; 774 NE 84th St Miami, FL 33879</p>
-          <p className="flex items-center"><FaRegEnvelope />&nbsp; email@email.com</p>
+          <p className="flex items-center">
+            <LuMapPin />
+            &nbsp; 774 NE 84th St Miami, FL 33879
+          </p>
+          <p className="flex items-center">
+            <FaRegEnvelope />
+            &nbsp; email@email.com
+          </p>
           <a className="link link-hover">Jobs</a>
           {/* <a className="link link-hover">Press kit</a> */}
         </nav>
@@ -37,16 +42,24 @@ const Footer = () => {
                 placeholder="username@site.com"
                 className="input h-[46px] rounded-none"
               />
-              <button className="btn  rounded-none bg-[#2B3440] text-[#f0f3bd]">Subscribe</button>
+              <button className="btn  rounded-none bg-[#2B3440] text-[#f0f3bd]">
+                Subscribe
+              </button>
             </div>
           </fieldset>
         </form>
       </footer>
       <footer className="footer p-10 bg-neutral text-neutral-content items-center gap-16">
-      <aside>
-        <p>
-          All content © copyright 2024 Savills. All rights reserved. Savills plc, incorporated and registered in England and Wales. Registered office: 33 Margaret Street, London, W1G 0JD. Registered number: 2122174. Savills plc is a holding company, some of whose subsidiaries are authorised and regulated by the Financial Conduct Authority (FCA), and some of whose subsidiaries are regulated by the Royal Institution of Chartered Surveyors (RICS).
-        </p>
+        <aside>
+          <p>
+            All content © copyright 2024 Luxstay. All rights reserved. Luxstay
+            plc, incorporated and registered in England and Wales. Registered
+            office: 33 Margaret Street, London, W1G 0JD. Registered number:
+            2122174. Luxstay plc is a holding company, some of whose
+            subsidiaries are authorised and regulated by the Financial Conduct
+            Authority (FCA), and some of whose subsidiaries are regulated by the
+            Royal Institution of Chartered Surveyors (RICS).
+          </p>
         </aside>
         <nav className="flex items-center">
           <h6 className="footer-title">FIND US ON SOCIAL</h6>

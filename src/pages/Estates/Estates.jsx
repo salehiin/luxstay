@@ -65,9 +65,9 @@ const Estates = () => {
         
         </li>
       </ul>
-      <div className="text-center m-2  md:m-6 lg:m-12 p-8">
+      <div className="text-center m-0 md:m-6 lg:m-12 p-8">
         <h3 className="font-semibold text-3xl mb-10">Description</h3>
-        <p className="m-6">{estate.description} These prestigious properties transcend mere living spaces, embodying the epitome of architectural brilliance and lavish amenities. From sprawling mansions nestled in idyllic countryside settings to sleek penthouses gracing the skylines of vibrant cities, luxury real estate caters to the most refined tastes and extravagant lifestyles.</p>
+        <p className="m-0 md:m-6">{estate.description} These prestigious properties transcend mere living spaces, embodying the epitome of architectural brilliance and lavish amenities. From sprawling mansions nestled in idyllic countryside settings to sleek penthouses gracing the skylines of vibrant cities, luxury real estate caters to the most refined tastes and extravagant lifestyles.</p>
         <p>These elite properties boast exquisite craftsmanship and meticulous attention to detail, featuring bespoke finishes and state-of-the-art technology. Beyond their awe-inspiring aesthetics, luxury residences often provide a plethora of indulgent amenities, such as private pools, home theaters, and expansive outdoor entertaining areas. Moreover, their prime locations offer breathtaking views of iconic landmarks or serene natural landscapes, elevating the living experience to unmatched heights. In essence, luxury real estate represents the ultimate expression of prestige and sophistication, where every aspect of living is curated to deliver an unparalleled sense of grandeur and refinement.</p>
       </div>
       {/* <div className="">
