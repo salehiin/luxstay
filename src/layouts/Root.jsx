@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Root = () => {
     return (
-        <div className="max-w-6xl mx-auto">
+        <div className=" mx-auto">
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>

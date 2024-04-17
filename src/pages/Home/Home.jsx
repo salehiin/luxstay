@@ -15,7 +15,7 @@ const Home = () => {
                 <h2 class="text-4xl font-bold">Our Featured Exclusives</h2>
                 <p class="m-6">Discover unparalleled coastal living in our exclusive beachfront properties. Explore luxury, serenity, and breathtaking views in our handpicked selection. Welcome home.</p>
             </div>
-            <div className="flex flex-wrap gap-4 text-center">
+            <div className="flex flex-wrap gap-y-4 text-center">
             
                 {
                     estates.map(aEstates => <Estate
