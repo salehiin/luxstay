@@ -22,7 +22,7 @@ const Agents = () => {
       <div className="my-20">
         {/* SINGLE AGENTS 1 */}
         <div className="p-5 flex flex-col md:flex-row border-y-2 shadow-lg shadow-green-100 items-center justify-evenly m-3">
-          <div className="flex items-center shadow-md shadow-green-200  w-80">
+          <div className="flex items-center shadow-md shadow-green-200  w-80 mb-4 lg:mb-0">
             <img
               className="w-full"
               src="https://i.postimg.cc/mZnPth1j/aone.png"
@@ -51,7 +51,7 @@ const Agents = () => {
         </div>
         {/* SINGLE AGENTS 2 */}
         <div className="p-5 flex flex-col md:flex-row border-y-2 shadow-lg shadow-green-100 items-center justify-evenly m-3">
-          <div className="shadow-md shadow-green-200  w-80">
+          <div className="shadow-md shadow-green-200  w-80 mb-4 lg:mb-0">
             <img
               className="w-full"
               src="https://i.postimg.cc/kM6GSqmy/atwo.jpg"
@@ -80,7 +80,7 @@ const Agents = () => {
         </div>
         {/* SINGLE AGENTS 3 */}
         <div className="p-5 flex flex-col md:flex-row border-y-2 shadow-lg shadow-green-100 items-center justify-evenly m-3">
-          <div className="shadow-md shadow-green-200  w-80">
+          <div className="shadow-md shadow-green-200  w-80 mb-4 lg:mb-0">
             <img
               className="w-full"
               src="https://i.postimg.cc/7P2P693s/athree.jpg"
@@ -109,7 +109,7 @@ const Agents = () => {
         </div>
         {/* SINGLE AGENTS 4 */}
         <div className="p-5 flex flex-col md:flex-row border-y-2 shadow-lg shadow-green-100 items-center justify-evenly m-3">
-          <div className="shadow-md shadow-green-200  w-80">
+          <div className="shadow-md shadow-green-200  w-80 mb-4 lg:mb-0">
             <img
               className="w-full"
               src="https://i.postimg.cc/x1xVgNGN/afour.jpg"
@@ -138,7 +138,7 @@ const Agents = () => {
         </div>
         {/* SINGLE AGENTS 5 */}
         <div className="p-5 flex flex-col md:flex-row border-y-2 shadow-lg shadow-green-100 items-center justify-evenly m-3">
-          <div className="shadow-md shadow-green-200  w-80">
+          <div className="shadow-md shadow-green-200  w-80 mb-4 lg:mb-0">
             <img
               className="w-full"
               src="https://i.postimg.cc/FR0qtYSZ/afive.jpg"
@@ -167,7 +167,7 @@ const Agents = () => {
         </div>
         {/* SINGLE AGENTS */}
         <div className="p-5 flex flex-col md:flex-row border-y-2 shadow-lg shadow-green-100 items-center justify-evenly m-3">
-          <div className="shadow-md shadow-green-200  w-80">
+          <div className="shadow-md shadow-green-200  w-80 mb-4 lg:mb-0">
             <img
               className="w-full"
               src="https://i.postimg.cc/3x6bdXC1/asix.jpg"

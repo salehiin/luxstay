@@ -16,35 +16,35 @@ const Profile = () => {
 
   return (
     <div className="text-center">
-      <div className="m-5">
+      <div className="m-0 md:m-5">
         <h1 className="font-bold text-2xl">Your Personal Profile</h1>
-        <div className="overflow-x-auto  border-green-500 p-0 m-0 md:m-2 lg:m-6 mt-6 rounded-2xl flex flex-col md:flex-row items-center justify-evenly">
-            <div className="mr-0 md:mr-8">
+        <div className="overflow-x-auto p-0 m-0 md:m-2 lg:m-6 mt-6 rounded-2xl flex flex-col md:flex-row items-center justify-evenly">
+            <div className="mr-0 md:mr-8 mb-4 md:mb-0">
                 <img className="w-48 h-48 rounded-[50%]" src={user?.photoURL || userDefaultPic} alt="" />
             </div>
             <div>
-              <div className='flex justify-between gap-20 mb-5'>
-                <p>User ID</p>
+              <div className='flex justify-left md:justify-between gap-2  md:gap-20 mb-5'>
+                <p className='font-bold'>User ID</p>
                 <p>{user?.uid || 'Not Found'}</p>
               </div>
-              <div className='flex justify-between gap-20 mb-5'>
-                <p>Name</p>
+              <div className='flex justify-left md:justify-between gap-2  md:gap-20 mb-5'>
+                <p className='font-bold'>Name</p>
                 <p>{user?.displayName || 'User Unknown'}</p>
               </div>
-              <div className='flex justify-between gap-20 mb-5'>
-                <p>Email</p>
+              <div className='flex justify-left md:justify-between gap-2  md:gap-20 mb-5'>
+                <p className='font-bold'>Email</p>
                 <p>{user?.email || 'User Unknown'}</p>
               </div>
-              <div className='flex justify-between gap-20 mb-5'>
-                <p>Contact No</p>
+              <div className='flex justify-left md:justify-between gap-2  md:gap-20 mb-5'>
+                <p className='font-bold'>Contact No</p>
                 <p>+ 00 01700000000</p>
               </div>
-              <div className='flex justify-between gap-20 mb-5'>
-                <p>Address</p>
+              <div className='flex justify-left md:justify-between gap-2  md:gap-20 mb-5'>
+                <p className='font-bold'>Address</p>
                 <p>New Town, Old City</p>
               </div>
-              <div className='flex justify-between gap-20 mb-5'>
-                <p>Additional Info</p>
+              <div className='flex justify-left md:justify-between gap-2  md:gap-20 mb-5'>
+                <p className='font-bold'>Additional Info</p>
                 <p>{user?.metadata.UserMetadata || 'Not Found'}</p>
               </div>
             </div>

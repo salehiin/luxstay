@@ -52,20 +52,27 @@ const Estates = () => {
       <ul className=" font-semibold list-disc ml-6 mt-2">
         <li className="text-[#2B3440]"> <span className="font-bold">Property ID-</span> {estate.id}</li>
         <li className="text-[#2B3440] my-1"> <span className="font-bold">Property Size-</span> {estate.area}</li>
-        <li className="text-[#2B3440]"><span className="font-bold">Facilities-</span>
+        <li className="text-[#2B3440]"><span className="font-bold">Facilities-
+        
+        {estate.facilities.map((facility, index) => (<span className="ml-8" key={index}>{facility}.</span>))}
 
-        <ol>
+        
+        
+        
+        </span>
+
+        {/* <ol>
         {estate.facilities.map((facility, index) => (
-            <li className="ml-8" key={index}>{facility}</li>
+            <span className="ml-8" key={index}>{facility},</span>
           ))}
 
-        </ol>
+        </ol> */}
 
         {/* {estate.facilities} */}
         
         </li>
       </ul>
-      <div className="text-center m-0 md:m-6 lg:m-12 p-8">
+      <div className="text-center m-0 md:m-4 p-8">
         <h3 className="font-semibold text-3xl mb-10">Description</h3>
         <p className="m-0 md:m-6">{estate.description} These prestigious properties transcend mere living spaces, embodying the epitome of architectural brilliance and lavish amenities. From sprawling mansions nestled in idyllic countryside settings to sleek penthouses gracing the skylines of vibrant cities, luxury real estate caters to the most refined tastes and extravagant lifestyles.</p>
         <p>These elite properties boast exquisite craftsmanship and meticulous attention to detail, featuring bespoke finishes and state-of-the-art technology. Beyond their awe-inspiring aesthetics, luxury residences often provide a plethora of indulgent amenities, such as private pools, home theaters, and expansive outdoor entertaining areas. Moreover, their prime locations offer breathtaking views of iconic landmarks or serene natural landscapes, elevating the living experience to unmatched heights. In essence, luxury real estate represents the ultimate expression of prestige and sophistication, where every aspect of living is curated to deliver an unparalleled sense of grandeur and refinement.</p>
