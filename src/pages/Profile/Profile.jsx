@@ -2,6 +2,7 @@
 import userDefaultPic from '../../assets/user.png';
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { Helmet } from 'react-helmet-async';
 
 const Profile = () => {
 
@@ -16,6 +17,9 @@ const Profile = () => {
 
   return (
     <div className="text-center">
+      <Helmet>
+         <title>Luxstay | User Profile</title>
+      </Helmet>
       <div className="m-0 md:m-5">
         <h1 className="font-bold text-2xl">Your Personal Profile</h1>
         <div className="overflow-x-auto p-0 m-0 md:m-2 lg:m-6 mt-6 rounded-2xl flex flex-col md:flex-row items-center justify-evenly">

@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import swal from 'sweetalert';
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
 
@@ -72,7 +73,9 @@ const Login = () => {
 
   return (
     <div>
-       
+      <Helmet>
+        <title>Luxstay | Login</title>
+      </Helmet> 
       <div className="hero bg-base-200">
       
         <div className="hero-content flex-col">

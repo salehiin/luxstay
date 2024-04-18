@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { LuMapPin } from "react-icons/lu";
+import { Helmet } from "react-helmet-async";
 
 const Estates = () => {
   const estates = useLoaderData();
@@ -11,6 +12,9 @@ const Estates = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Luxstay | Estate Details</title>
+      </Helmet>
       <div
         className="hero min-h-screen relative"
         style={{

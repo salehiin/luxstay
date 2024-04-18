@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Estate from "./Estate";
 import Slider from "./Slider";
 import { useLoaderData } from "react-router-dom";
@@ -10,6 +11,9 @@ const Home = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Luxstay | Home</title>
+            </Helmet>
             <Slider></Slider>
             <div class="p-0 lg:px-56 text-center mt-12">
                 <h2 class="text-4xl font-bold">Our Featured Exclusives</h2>

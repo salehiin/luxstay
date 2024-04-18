@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import swal from 'sweetalert';
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -73,6 +74,9 @@ const Register = () => {
 
   return (
     <div>
+      <Helmet>
+         <title>Luxstay | Register</title>
+      </Helmet>
       
       <div className="hero bg-base-200">
         <div className="hero-content flex-col">
