@@ -6,7 +6,8 @@ const Slider = () => {
           <div className="w-full">
           {/* <div className="hero-overlay bg-opacity-60"></div> */}
             <img
-              src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+              // src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+              src="https://i.postimg.cc/ryQzscYg/sliderone.jpg"
               className="w-full"
             />
           </div>
@@ -21,7 +22,7 @@ const Slider = () => {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            src="https://i.postimg.cc/MHVSy7my/slidertwo.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -35,7 +36,7 @@ const Slider = () => {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            src="https://i.postimg.cc/4yJ55ZzB/sliderthree.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -49,7 +50,7 @@ const Slider = () => {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            src="https://i.postimg.cc/VkMCdpt6/slideroptional.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
